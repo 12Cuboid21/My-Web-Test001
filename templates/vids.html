@@ -1,0 +1,27 @@
+<html>
+
+    <head>
+        <title>Videos</title>
+        <link rel="shortcut icon" href="{{url_for('static', filename='favicony.ico')}}" type="image/x-icon">
+    </head>
+
+    <body style="background-size: 100% 100%; background-attachment: fixed; background-repeat: no-repeat; background-image: url(http://192.168.1.202:2222/static/photos/backgroundht.jpg); text-align: center; font-family: Arial, serif;">
+        <div style="overflow: hidden; overflow-y: scroll; position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); background-color: rgba(255, 255, 255, 0.418); border: 3px solid white; border-radius: 3px; height: 500px; width: 500px;">
+            <h1>Videos</h1>
+            <p>Two videos found</p>
+            <p>-----------------</p>
+            <h3>Web showcase</h3>
+            <video width="500" height="400" controls>
+                <source src="{{url_for('static', filename='videos/webshowcaseb1.mp4')}}">
+            </video>
+            <p>-----------------</p>
+            <h3>Update</h3>
+            <video width="500" height="400" controls>
+                <source src="{{url_for('static', filename='videos/P1U.mp4')}}">
+            </video>
+            <p>-----------------</p>
+            <button style="background-color:firebrick;" type="button" onclick="location.href='http://192.168.1.202:2222'" class="Back">Go back</button>
+        </div>
+    </body>
+
+</html>

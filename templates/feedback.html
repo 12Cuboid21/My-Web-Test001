@@ -1,0 +1,24 @@
+<html>
+
+    <head>
+        <title>Feedback</title>
+        <link rel="shortcut icon" href="{{url_for('static', filename='faviconq.ico')}}" type="image/x-icon">
+    </head>
+
+    <body style="background-size: 100% 100%; background-attachment: fixed; background-repeat: no-repeat; background-image: url(http://192.168.1.202:2222/static/photos/backgroundht.jpg); text-align: center; font-family: Arial, serif;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); background-color: rgba(255, 255, 255, 0.418); border: 3px solid white; border-radius: 3px; height: 500px; width: 500px;">
+            <div style="margin: auto; height: 50px; width: 50px;">
+                <img style="height: 50px; width: 50px;" src="{{url_for('static', filename='photos/questionmark.png')}}">
+            </div>
+            <h1>Feedback</h1>
+            <p>Would you like to give me a feedback of my website?</p>
+            <div style="margin: auto; height: 50px; width: 50px;">
+                <img type="button" onclick="location.href='http://192.168.1.202:2222/form'" style="height: 50px; width: 50px;" src="{{url_for('static', filename='photos/yesb.png')}}">
+            </div>
+            <div style="margin: auto; height: 50px; width: 50px;">
+                <img type="button" onclick="location.href='http://192.168.1.202:2222/ok'" style="height: 50px; width: 50px;" src="{{url_for('static', filename='photos/nob.png')}}">
+            </div>
+        </div>
+    </body>
+
+</html>

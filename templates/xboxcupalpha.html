@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+        <title>Xbox cup</title>
+        <link rel="shortcut icon" href="{{url_for('static', filename='faviconw.ico')}}" type="image/x-icon">
+    </head>
+
+    <body style="background-size: 100% 100%; background-attachment: fixed; background-repeat: no-repeat; background-image: url(http://192.168.1.202:2222/static/photos/backgroundht.jpg); text-align: center; font-family: Arial, serif;">
+        <div style="overflow: hidden; overflow-y: scroll; position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); background-color: rgba(255, 255, 255, 0.418); border: 3px solid white; border-radius: 3px; height: 800px; width: 800px;">
+            <h1>Gaming for members</h1>
+            <h2>Welcome {{uu}}</h2>
+            <div style="overflow: hidden; overflow-y: scroll; background-color: rgba(255, 255, 255, 0.418); border: 3px solid white; border-radius: 3px; margin: auto; padding: 20px; height: 550px; width: 490px;">
+                <h1>Doodle god</h1>
+                <h3>Info</h3>
+            </div>
+            <br>
+            <p>----------------------</p>
+            <br>
+            <div style="overflow: hidden; overflow-y: scroll; background-color: rgba(255, 255, 255, 0.418); border: 3px solid white; border-radius: 3px; margin: auto; padding: 20px; height: 550px; width: 490px;">
+                <h1>Competitions</h1>
+                <br>
+                <div style="overflow: hidden; overflow-y: scroll; background-color: rgba(255, 255, 255, 0.418); border: 3px solid white; border-radius: 3px; margin: auto; padding: 20px; height: 500px; width: 490px;">
+                    <h1>Xbox cup</h1>
+                    <h2>Info</h2>
+                    <h4 style="color: limegreen;">Round 1:</h4>
+                    <p style="color: limegreen;">Kinect sports 1, Adventures, Just dance kids</p>
+                    <h4 style="color: limegreen;">Final round:</h4>
+                    <p style="color: limegreen;">Kinect sports 2, Rayman legends, Dance central</p>
+                    <p>-------------------------</p>
+                    <p>Red = Pájina</p>
+                    <p>Blue = Mikes</p>
+                    <p>Aqua = Cuboid</p>
+                    <p>----- Results tree -----</p>
+                    <br>
+                    <img style="margin: auto; border: 3px solid white; border-radius: 3px; height: 500px; width: 490px;" src="{{url_for('static', filename='photos/xboxcuplb3.png')}}">
+                    <br>
+                    <p>----------------------</p>
+                    <br>
+                    <div style="overflow: hidden; overflow-y: scroll; background-color: rgba(255, 255, 255, 0.418); border: 3px solid white; border-radius: 3px; margin: auto; padding: 20px; height: 200px; width: 420px;">
+                        <h3>Your results and prize is going to be here + free poster</h3>
+                        <br>
+                        <p>--------- Poster ----------</p>
+                        <img style="margin: auto; border: 3px solid white; border-radius: 3px; height: 150px; width: 140px;" src="{{url_for('static', filename='photos/xboxcup.png')}}">
+                        <p>Place: 1st</p>
+                        <p>---------- Prize ---------</p>
+                        <img style="margin: auto; border: 3px solid white; border-radius: 3px; height: 150px; width: 140px;" src="{{url_for('static', filename='photos/xboxcup1st.png')}}">
+                    </div>
+                </div>
+            </div>
+            
+            <button style="background-color:firebrick;" type="button" onclick="location.href='http://192.168.1.202:2222'" class="Back">Go back</button>
+        </div>
+    </body>
+
+</html>

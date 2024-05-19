@@ -1,0 +1,41 @@
+<html>
+
+    <head>
+        <title>Chat</title>
+        <link rel="shortcut icon" href="{{url_for('static', filename='favicona.ico')}}" type="image/x-icon">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script>
+    </head>
+
+    <body style="background-size: 100% 100%; background-attachment: fixed; background-repeat: no-repeat; background-image: url(http://192.168.1.202:2222/static/photos/backgroundht.jpg); text-align: center; font-family: Arial, serif;">
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var socket = io.connect("http://192.168.1.202:2222")
+                socket.on('connect', function() {
+                    socket.send("User connected!");
+                });
+
+                socket.on('message', function(data) {
+                    $('#messages').append($('<h3>').text(data));
+                });
+
+                $('#sendBtn').on('click', function() {
+                    socket.send($('#username').val() + ': ' + $('#message').val());
+                    $('#message').val('');
+                });
+            })
+        </script>
+        <div style="background-color: rgba(255, 255, 255, 0.418); border: 3px solid white; border-radius: 3px; height: auto; width: auto; margin: auto;">
+            <h1 style="color: black;">Chat</h1>
+        </div>
+        <div id="messages" style="border: 10px solid grey; height: 700px; max-width: 600px; margin:auto; background-color:rgb(198, 255, 228); overflow: hidden; overflow-y: scroll; border-radius: 20px; text-align: left;">
+        </div>
+        <br>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="text" id="message" placeholder="Message" required>
+        <button id="sendBtn">Send</button>
+        <button style="background-color:firebrick;" type="button" onclick="location.href='http://192.168.1.202:2222'" class="Back">Go back</button>
+    </body>
+
+</html>

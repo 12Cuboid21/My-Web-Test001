@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+        <title>Pixel art</title>
+        <link rel="shortcut icon" href="{{url_for('static', filename='faviconp.ico')}}" type="image/x-icon">
+    </head>
+
+    <body style="background-size: 100% 100%; background-attachment: fixed; background-repeat: no-repeat; background-image: url(http://192.168.1.202:2222/static/photos/backgroundht.jpg); text-align: center; font-family: Arial, serif;">
+        <div style="overflow: hidden; overflow-y: scroll; top: 50%; position: absolute; left: 50%; transform: translate(-50% , -50%); background-color: rgba(255, 255, 255, 0.418); border: 3px solid white; border-radius: 3px; height: 500px; width: 500px;">
+            <h1>Pixel art</h1>
+            <p>7 pictures found</p>
+            <p>-------------------------------------------------------------------------------------------------</p>
+            <div style="margin: auto; padding: 20px; height: 50px; width: 50px;">
+                <img style="height: 50px; width: 50px;" src="{{url_for('static', filename='photos/pixart1.png')}}">
+            </div>
+            <p>-------------------------------------------------------------------------------------------------</p>
+            <div style="margin: auto; padding: 20px; height: 50px; width: 50px;">
+                <img style="height: 50px; width: 50px;" src="{{url_for('static', filename='photos/Cuboid.png')}}">
+            </div>
+            <p>-------------------------------------------------------------------------------------------------</p>
+            <div style="margin: auto; padding: 20px; height: 50px; width: 50px;">
+                <img style="height: 50px; width: 50px;" src="{{url_for('static', filename='photos/Char_stand.gif')}}">
+            </div>
+            <p>-------------------------------------------------------------------------------------------------</p>
+            <div style="margin: auto; padding: 20px; height: 50px; width: 50px;">
+                <img style="height: 50px; width: 50px;" src="{{url_for('static', filename='photos/char-fb-walk.gif')}}">
+            </div>
+            <p>-------------------------------------------------------------------------------------------------</p>
+            <div style="margin: auto; padding: 20px; height: 50px; width: 50px;">
+                <img style="height: 50px; width: 50px;" src="{{url_for('static', filename='photos/char-walking-r.gif')}}">
+            </div>
+            <p>-------------------------------------------------------------------------------------------------</p>
+            <div style="margin: auto; padding: 20px; height: 50px; width: 50px;">
+                <img style="height: 50px; width: 50px;" src="{{url_for('static', filename='photos/char-walking-l.gif')}}">
+            </div>
+            <p>-------------------------------------------------------------------------------------------------</p>
+            <div style="margin: auto; padding: 20px; height: 50px; width: 50px;">
+                <img style="height: 50px; width: 50px;" src="{{url_for('static', filename='photos/backgroundht.jpg')}}">
+            </div>
+            <p>-------------------------------------------------------------------------------------------------</p>
+
+            <button style="width: 50px; height: 40px; background-color: firebrick;" type="button" onclick="location.href='http://192.168.1.202:2222'" class="Back">Go back</button>
+            <p>Feel free to use any picture that is shown here.</p>
+        </div>
+    </body>
+
+</html>
